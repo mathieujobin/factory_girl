@@ -22,6 +22,8 @@ gemfile:
 matrix:
   fast_finish: true
   exclude:
+    - rvm: jruby-19mode
+      gemfile: gemfiles/5.0.gemfile
     - rvm: 1.9.3
       gemfile: gemfiles/5.0.gemfile
     - rvm: 2.0.0
@@ -30,8 +32,6 @@ matrix:
       gemfile: gemfiles/5.0.gemfile
   allow_failures:
     - rvm: ruby-head
-    - rvm: jruby-19mode
-      gemfile: gemfiles/5.0.gemfile
     - rvm: rbx-2
 branches:
   only:
